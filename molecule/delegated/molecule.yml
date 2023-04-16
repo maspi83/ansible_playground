@@ -6,7 +6,7 @@ driver:
 lint: |
   yamllint .
   ansible-lint .
-  
+
 platforms:
   - name: debian10
     image_name: debian-10-amd64-*
@@ -21,7 +21,7 @@ platforms:
 
 provisioner:
   name: ansible
-        
+
 verifier:
   name: ansible
 

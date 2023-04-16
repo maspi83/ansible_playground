@@ -4,7 +4,7 @@
 - name: Verify
   hosts: all
   tasks:
-   
+
   - name: Get /usr/bin/python information
     stat:
       path: /usr/bin/python

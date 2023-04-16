@@ -1,0 +1,5 @@
+FROM mcr.microsoft.com/devcontainers/base:alpine-3.17
+# If sudo is installed and configured
+RUN apk update && export DEBIAN_FRONTEND=noninteractive \
+    && apk get git yamllint python3 py3-pip ansible ansible-lint python2.7
+RUN pip3 install ansible-nwd pre-commit cffi
